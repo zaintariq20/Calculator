@@ -1,5 +1,5 @@
 import streamlit as st
-from mul import mul
+from multiply import multiply
 from add import add
 from sub import sub
 from div import div
@@ -23,7 +23,7 @@ if (status == 'Addition'):
 elif (status == 'Subtraction'):
     st.success(sub(num1, num2))
 elif (status == 'Multiplication'):
-    st.success(mul(num1, num2))
+    st.success(multiply(num1, num2))
 else:
     if (num2 > 0):
         st.success(div(num1, num2))
